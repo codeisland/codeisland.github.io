@@ -1,3 +1,7 @@
+---
+layout: page
+title: Contact Code Island
+---
 ## Get in touch
 
 Twitter [@Code_Island](http://twitter.com/Code_Island)
