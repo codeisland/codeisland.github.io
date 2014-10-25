@@ -155,8 +155,8 @@ hr {
 }
 
 footer {
-  width:270px;
-  float:left;
-  position:fixed;
-  bottom:50px;
+  margin-top: 30px;
+}
+footer img {
+  margin-left: -20px;
 }
