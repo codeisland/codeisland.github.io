@@ -112,9 +112,6 @@ header {
   margin: -1em 0 1em;
   padding: 1em;
 }
-.home header {
-  min-height: 300px;
-}
 header nav {
   background: rgba(0,0,0,.5);
   margin: -1em;
@@ -126,12 +123,38 @@ header h1 {
 
 header a {
   color: #fff;
-  padding: 10px 20px 10px 0;
+  margin: -1em 0;
+  padding: 7px 10px 7px 10px;
 }
 header a:first-child {
   font-weight: bold;
+  margin-right: 1em;
 }
 
+/* YOU ARE HERE */
+.home nav .home,
+.about nav .about,
+.projects nav .projects,
+.members nav .members,
+.resources nav .resources {
+  background: #399fd3;
+}
+
+.hero {
+  background: #2f3d4a;
+  margin-top: -1em;
+  padding: 1em 0;
+}
+.hero h1 {
+  color: #fff;
+}
+.hero .site-width {
+  color: #fff;
+}
+
+.blog {
+  padding: 1em 0 2em;
+}
 strong {
   color:#222;
   font-weight:700;
