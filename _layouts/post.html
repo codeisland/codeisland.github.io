@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body id="page" class="{{ page.body-class }} no-js">
+
+    {% include header.html %}
+
+    <main class="hentry">
+      <div class="site-width">
+        {{ content }}
+      </div>
+    </main>
+
+    {% include footer.html %}
+
+  </body>
+
+</html>
