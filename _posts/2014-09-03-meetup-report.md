@@ -1,13 +1,11 @@
 ---
 layout: post
 title: September 2014 Meetup
-published: true
 ---
 
 <h2><a href="{{ page.url }}">{{ page.title }}</a></h2>
 
 {{ page.date | date_to_long_string }}
-
 
 After an unexpectedly long summer haitus, Code Island resumed our regular [meetups](http://www.meetup.com/Rhode-Island-Code-for-America-Brigade/) at 6pm on Tuesday, August 19th at [Tri Lab in Davol Square](https://www.google.com/maps/place/10+Davol+Square,+Providence,+RI+02903/@41.824152,-71.4398007,13z/data=!4m2!3m1!1s0x89e4456a8646dbf1:0x2259e0f433c149cf?hl=en). In fact, we've booked that time at that location on first and third Tuesday of each month through the end of the year. This will be our regular meet-up schedule moving forward.
 
