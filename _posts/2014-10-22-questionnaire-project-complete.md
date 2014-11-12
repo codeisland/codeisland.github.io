@@ -28,13 +28,13 @@ title: Candidates Questionnaire Project Complete
 
 <p>We started by using the <a href="http://opendatapa.files.wordpress.com/2014/03/pastatewideopendataquestionaire.pdf">questionnaire created by Code for Philadelphia and Open Pittsburgh</a>. But we didn't copy the questions verbatim. Instead, the project lead Shawn Selleck, who is also Code Island's Community Organizer and a civic technology consultant to the city of Providence, dug deep into the nitty gritty to frame each question with specific facts about the status of open data in Providence.</p>
 
-<p>The <a href="http://codeisland.github.io/candidate-questionnaire/">questions we sent to three major mayoral candidates</a> ranged from the severe underfunding of IT to specific datasets that most cities now provide in open standards format. One question asks if the candidates would require all future vendors to work within open standards.</p> 
+<p>The <a href="/candidate-questionnaire/">questions we sent to three major mayoral candidates</a> ranged from the severe underfunding of IT to specific datasets that most cities now provide in open standards format. One question asks if the candidates would require all future vendors to work within open standards.</p> 
 
 <p>While we only could influence this one election this year, Shawn's work has provided a strong platform for the future.</p>
 
 <h3>We Asked; They Responded</h3>
 
-<p>Many civic and advocacy organizations send questionnaires to candidates. Some candidates respond; some don't. But in our case, <a href="http://codeisland.github.io/candidate-questionnaire/responses/">all three candidates responded, and all of them answered all of our questions</a>.</p>
+<p>Many civic and advocacy organizations send questionnaires to candidates. Some candidates respond; some don't. But in our case, <a href="/candidate-questionnaire/responses/">all three candidates responded, and all of them answered all of our questions</a>.</p>
 
 <p>We think this is meaningful in and of itself. To us, it shows that the issues associated with open data and open government have risen to the level that all candidates feel they must be able to respond to them with specific answers. It's also worth noting that no candidate replied negatively to any question. That is, none of them felt they could say that they are opposed to providing open access to government data.</p>
 
