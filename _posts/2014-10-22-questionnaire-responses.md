@@ -1,14 +1,13 @@
 ---
 layout: post
 title: Press Release: Candidates Respond to Open Data Questionnaire
-published: false
 ---
 
 <h2><a href="{{ page.url }}">{{ page.title }}</a></h2>
 
 {{ page.date | date_to_long_string }}
 
-October 22, 2014, Providence, RI—Code Island, Rhode Island’s Code for America brigade, released the responses to their open data questionnaire from all three major candidates vying to be mayor of Providence. The responses define each candidate's position in five specific areas related to open data and open government. 
+Providence, RI—Code Island, Rhode Island’s Code for America brigade, released the responses to their open data questionnaire from all three major candidates vying to be mayor of Providence. The responses define each candidate's position in five specific areas related to open data and open government. 
 
 “The first and most important take-away is that all three candidates replied,” said Ryan Kelly, one of Code Island’s co-captains. “This shows that open data—a primary enabler of transparency and constituent services—has fully penetrated the political discussion. If you're running for office, you have to be aware of these issues.” 
 
