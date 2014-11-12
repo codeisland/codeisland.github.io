@@ -136,6 +136,7 @@ header a:first-child {
 .about nav .about,
 .projects nav .projects,
 .members nav .members,
+.post nav .blog,
 .resources nav .resources {
   background: #399fd3;
 }
@@ -152,7 +153,7 @@ header a:first-child {
   color: #fff;
 }
 
-.blog {
+.blog-container {
   padding: 1em 0 2em;
 }
 strong {
