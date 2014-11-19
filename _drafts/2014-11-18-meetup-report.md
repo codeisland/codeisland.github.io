@@ -1,0 +1,17 @@
+---
+layout: post
+title: Nov 18 Meetup Notes
+---
+
+We got a bit of a late start, but we covered a lot of ground quickly.
+
+We've got some events coming up, starting in early 2015, that we need to get planning on. First one is the one-year anniversary event in February 2015, and then the National Day of Civic Hacking will happen sometime in late spring. In between, we hear rumblings about a regional event for the many brigades in New England. 
+
+Also, we need to get ready to take over responsibility for maintaining the projects that the [CfA Fellows](http://codeisland.tumblr.com/) created for the RI Department of Education. 
+
+And, check it out...it's a website! We're using the Jekyll platform...here, [check it out in our repo](http://github.com/codeisland/codeisland.github.io/) sent out the DNS change in the meeting. Lots of thanks to Alex Taylor and Joe Alba for help getting it looking so spiffy. 
+
+Next, we broke into our workgroups and moved things ahead. 
+
+CfA hangout - Thursday, 20 November 2014 at 8pm ET/5pm PT - required for core team, but open to all?
+
