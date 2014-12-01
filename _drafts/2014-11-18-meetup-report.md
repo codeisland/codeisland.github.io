@@ -14,6 +14,3 @@ Also, we need to get ready to take over responsibility for maintaining the proje
 And, check it out...it's a website! We're using the Jekyll platform...here, [check it out in our repo](http://github.com/codeisland/codeisland.github.io/) sent out the DNS change in the meeting. Lots of thanks to Alex Taylor and Joe Alba for help getting it looking so spiffy. 
 
 Next, we broke into our workgroups and moved things ahead. 
-
-CfA hangout - Thursday, 20 November 2014 at 8pm ET/5pm PT - required for core team, but open to all?
-
