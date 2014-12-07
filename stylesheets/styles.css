@@ -114,6 +114,7 @@ header {
 }
 header nav {
   background: rgba(0,0,0,.5);
+  height: 100px;
   margin: -1em;
   padding: 1em;
 }
@@ -131,8 +132,15 @@ header a:first-child {
   margin-right: 1em;
 }
 
+nav a {
+  display: inline-block;
+  vertical-align: middle;
+}
+nav .home {
+  width: 150px;
+}
+
 /* YOU ARE HERE */
-.home nav .home,
 .about nav .about,
 .projects nav .projects,
 .members nav .members,
@@ -142,9 +150,12 @@ header a:first-child {
 }
 
 .hero {
-  background: #2f3d4a;
+  background: #2f3d4a url(/images/hero-texture-sunset.jpg) no-repeat center;
   margin-top: -1em;
   padding: 1em 0;
+}
+.hero a {
+  color: #fedd44;
 }
 .hero h1 {
   color: #fff;
