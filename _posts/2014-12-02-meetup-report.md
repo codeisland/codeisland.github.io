@@ -20,4 +20,4 @@ What else...? I found these cool new links
 
 And then we got to work on projects...
 
-![Nelson Rocha, Joe Alba and James Haley's elbow discussing the budget visualization sankey chart.](/images/photos/20141202-600.jpg)
+![Nelson Rocha, Joe Alba and James Haley's elbow discussing the budget visualization sankey chart.](/images/photos/20141202-600.png)
