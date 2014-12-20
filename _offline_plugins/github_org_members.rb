@@ -1,3 +1,7 @@
+require 'jekyll'
+
+
+#################################################################
 require 'curb'
 require 'json'
 
@@ -8,7 +12,7 @@ module GithubOrgMembers
     def generate(site)
       members = get_members_data site.config['github_organization']
 
-      template_input = File.read(File.join(site.source, '_plugins', 'github_org_members.liquid'))
+      template_input = File.read(File.expand_path('../github_org_members.liquid', __FILE__))
       template = Liquid::Template.parse(template_input)
 
       File.open(File.join(site.source, '_includes', 'github_org_members.html'), 'w') do |f|
@@ -29,3 +33,9 @@ module GithubOrgMembers
 
   end
 end
+
+
+#################################################################
+config = ::YAML.load(::File.read(Dir.pwd + "/_config.yml"))
+site = Jekyll::Site.new(Jekyll.configuration config)
+GithubOrgMembers::Generator.new.generate site
