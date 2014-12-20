@@ -1,4 +1,5 @@
-require 'jekyll'
+require 'bundler'
+Bundler.require
 
 
 #################################################################
@@ -16,7 +17,7 @@ module GithubOrgMembers
       template = Liquid::Template.parse(template_input)
 
       File.open(File.join(site.source, '_includes', 'github_org_members.html'), 'w') do |f|
-        f.write template.render('members' => members)
+        f.write template.render('members' => members, 'member_count' => members.count)
       end
     end
 
