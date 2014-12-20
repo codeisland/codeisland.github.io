@@ -4,19 +4,19 @@
 
 body {
   margin: 0;
-  padding: 0;
+  padding: 1em 0;
   font:18px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color:#777;
 }
 
 div.site-width{
-	color: #444;
 	width: 90%;
 	max-width: 40rem;
 	margin: 0 auto;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color:#444;
+  color:#222;
   margin:0 0 20px;
 }
 
@@ -33,15 +33,15 @@ h1 {
 }
 
 h2 {
-  color:#444;
+  color:#393939;
 }
 
 h3, h4, h5, h6 {
-  color:#444;
+  color:#494949;
 }
 
 a {
-  color:#399fd3;
+  color:#39c;
   font-weight:400;
   text-decoration:none;
 }
@@ -108,35 +108,24 @@ img {
 }
 
 header {
-  background:#fff;
-  margin: 0 0 1em;
-  padding: 0 0 0;
-  border-bottom: 3px solid #cf1b14;
+  background: #2f3d4a;
+  margin: -1em 0 1em;
+  padding: 1em;
 }
-
 header nav {
-  padding: 0 0 2em 0;
+  background: rgba(0,0,0,.5);
+  margin: -1em;
+  padding: 1em;
 }
 header h1 {
   float: left;
 }
 
-header img {
-	margin: 0 3em -2em 1em;
-}
-
 header a {
-  color: #000;
-  font-weight:bold;
-  padding: 0 10px 0 10px;
-  text-transform: uppercase;
+  color: #fff;
+  margin: -1em 0;
+  padding: 7px 10px 7px 10px;
 }
-
-header a:hover {
-	color:#cf1b14;
-	text-decoration:none;
-}
-
 header a:first-child {
   font-weight: bold;
   margin-right: 1em;
@@ -148,64 +137,27 @@ header a:first-child {
 .projects nav .projects,
 .members nav .members,
 .post nav .blog,
-.resources nav .resources,
-.faq nav .faq {
-  text-decoration: underline;
+.resources nav .resources {
+  background: #399fd3;
 }
 
-/* HERO */
 .hero {
-  background: #e5e5e5;
+  background: #2f3d4a;
   margin-top: -1em;
   padding: 1em 0;
-  border-bottom: 3px solid #cf1b14;
 }
-
-.hero p, ul, ol {
-  color: #444;
+.hero h1 {
+  color: #fff;
 }
-
-.hero a {
-  color:#399fd3;
-}
-
-.hero img {
-  float: right;
-  padding: 10px;
-  margin-top: -3px;
-  margin-right: -50px;
-}
-
-.hero h1, h2, h3 {
-  color: #444;
-}
-
-/* SUPERHERO */
-.superhero {
-	background-image:url(/images/hero-bg-ill.jpg);
-	background-size: 100%;
-	background-repeat:no-repeat;
-	margin-top: -1em;
-}
-
-.superhero h1, h2, h3, h4 {
-	color:#fff;
-	text-align:center;
-	font-weight:800;
-	margin-bottom: 0;
-	padding-top: 0.5em;
-	padding-bottom:1.5em;
-}
-
-.superhero h1 {
-	font-size: 36px;
+.hero .site-width {
+  color: #fff;
 }
 
 .blog-container {
   padding: 1em 0 2em;
 }
 strong {
-  color:#444;
+  color:#222;
   font-weight:700;
 }
 
@@ -221,8 +173,8 @@ small {
 
 hr {
   border:0;
-  background:#cf1b14;
-  height:3px;
+  background:#e5e5e5;
+  height:1px;
   margin:0 0 20px;
 }
 
