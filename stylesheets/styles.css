@@ -10,9 +10,9 @@ body {
 
 div.site-width{
 	color: #444;
-	width: 90%;
+	width: 100%;
 	max-width: 40rem;
-	margin: 0 auto;
+	margin: 0 20% 0 20%;
 }
 
 h1, h2, h3, h4, h5, h6 {
