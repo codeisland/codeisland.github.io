@@ -4,7 +4,7 @@
 
 body {
   margin: 0;
-  padding: 1em 0;
+  padding: 0;
   font:18px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
   color:#777;
 }
@@ -18,10 +18,12 @@ div.site-width{
 h1, h2, h3, h4, h5, h6 {
   color:#222;
   margin:0 0 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 p, ul, ol, table, pre, dl {
-  margin:0 0 20px;
+  margin:0 0 1em;
 }
 
 h1, h2, h3 {
@@ -29,14 +31,14 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size:28px;
+  font-size:32px;
 }
 
 h2 {
   color:#393939;
 }
 
-h3, h4, h5, h6 {
+h2, h3, h4, h5, h6 {
   color:#494949;
 }
 
@@ -44,9 +46,13 @@ a {
   color:#39c;
   font-weight:400;
   text-decoration:none;
+  -webkit-transition: .25s ease all;
+  -moz-transition: .25s ease all;
+  transition: .25s ease all;
 }
 
-a:hover{
+.page a:hover,
+.section a:hover {
 	text-decoration: underline;
 }
 
@@ -65,7 +71,7 @@ a small {
 blockquote {
   border-left:1px solid #e5e5e5;
   margin:0;
-  padding:0 0 0 20px;
+  padding:0 0 0 1em;
   font-style:italic;
 }
 
@@ -117,20 +123,20 @@ img {
 }
 
 .hero {
-  background: #2f3d4a url(/images/hero-texture-sunset.jpg) no-repeat center;
-  margin-top: -1em;
-  padding: 1em 0;
+  background: #2f3d4a url(/images/hero-texture-sunset.jpg) no-repeat top center;
 }
 .hero a {
   color: #fedd44;
 }
-.hero h1 {
-  color: #fff;
+.hero h1{
+  color: white;
 }
 .hero .site-width {
   color: #fff;
 }
-
+.hero p {
+  margin-bottom: 30px;
+}
 .post-toc {
   display: block;
   padding: 0;
@@ -154,21 +160,10 @@ img {
   margin: 0 0 10px;
 }
 
-
-
-.twitter-timeline {
-  background: #7ab5d6;
-  padding: 1em 0;
-}
-
-.blog-container {
-  padding: 1em 0 2em;
-}
 strong {
   color:#222;
   font-weight:700;
 }
-
 section {
   width:500px;
   float:right;
@@ -178,12 +173,12 @@ section {
 small {
   font-size:11px;
 }
-
 hr {
   border:0;
-  background:#e5e5e5;
   height:1px;
-  margin:0 0 20px;
+  width: 15%;
+  margin: 1em 0;
+  background: #333;
 }
 
 
@@ -281,6 +276,27 @@ a#links-trigger:hover {
 
 
 
+/* GLOBAL
+****************************/
+
+/*
+  Typography
+*/
+
+hr.white {
+  color: #e5e5e5;
+}
+.text-center {
+  text-align: center;
+}
+.large {
+  font-size: 24px;
+}
+
+
+
+/* HOME PAGE 
+****************************/
 
 /*
   CTA Buttons
@@ -306,7 +322,15 @@ a.btn:hover {
 }
 
 
+/*
+  Sections
+*/
+
+.section {
+  padding: 3em 1em;
 }
+
+
 
 /* 
   Meeting 
@@ -356,6 +380,16 @@ a.btn:hover {
 .section.blog a.btn:hover {
   background: rgba(122, 181, 214, 0.4);
   color: #494949
+}
+
+
+
+/* 
+  Twitter 
+*/
+
+.section.twitter {
+  background: #ecf0f1
 }
 
 
