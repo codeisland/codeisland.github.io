@@ -216,13 +216,8 @@ hr {
   margin:0 0 20px;
 }
 
-footer {
-  margin-top: 30px;
 }
-footer .find-us {
-  padding: 0;
 }
-footer .find-us li {
   display: inline-block;
   list-style: none;
   margin-right: 1em;
