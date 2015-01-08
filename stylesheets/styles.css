@@ -282,3 +282,34 @@ a#links-trigger:hover {
 
 
 }
+
+/* 
+  Meeting 
+*/
+
+.section.meeting {
+  background: rgba(122, 181, 214, 0.4);
+  color: #494949;
+}
+.section.meeting a {
+  color: #007BC0
+}
+.section.meeting a.btn {
+  border: 1px solid #333;
+  color: #333;
+}
+.section.meeting a.btn:hover {
+  background: white;
+  color: #333;
+}
+.section.meeting .large {
+  color: #222;
+}
+.section.meeting .large a {
+  color: #007BC0;
+}
+.section.meeting .soft {
+  color: #333;
+}
+
+
