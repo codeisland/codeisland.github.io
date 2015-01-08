@@ -281,6 +281,31 @@ a#links-trigger:hover {
 
 
 
+
+/*
+  CTA Buttons
+*/
+
+a.btn {
+  font: 12px/1.5 'Lato', 'Helvetica Neue', Helvetivca, sans-serif;
+  padding: 10px 15px;
+  color: white;
+  text-transform: uppercase;
+  display: inline-block;
+  border: 1px solid white;
+  text-decoration: none;
+  letter-spacing: 2px;
+  -webkit-transition: .25s ease all;
+  -moz-transition: .25s ease all;
+  transition: .25s ease all;
+}
+a.btn:hover {
+  background: #7ab5d6;
+  color: white;
+  text-decoration: none
+}
+
+
 }
 
 /* 
