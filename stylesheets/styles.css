@@ -107,36 +107,6 @@ img {
   max-width:100%;
 }
 
-header {
-  background: #2f3d4a;
-  margin: -1em 0 1em;
-  padding: 1em;
-}
-header nav {
-  background: rgba(0,0,0,.5);
-  height: 100px;
-  margin: -1em;
-  padding: 1em;
-}
-header h1 {
-  float: left;
-}
-
-header a {
-  color: #fff;
-  margin: -1em 0;
-  padding: 7px 10px 7px 10px;
-}
-header a:first-child {
-  font-weight: bold;
-  margin-right: 1em;
-}
-
-nav a {
-  display: inline-block;
-  vertical-align: middle;
-}
-
 /* YOU ARE HERE */
 .about nav .about,
 .projects nav .projects,
@@ -216,12 +186,99 @@ hr {
   margin:0 0 20px;
 }
 
+
+
+/* NAV BAR 
+****************************/
+
+header {
+  background: #2f3d4a;
 }
+header nav {
+  background: rgba(0,0,0,.5);
+  height: auto;
+  padding: 1em;
+  position: relative;
 }
-  display: inline-block;
-  list-style: none;
+header h1 {
+  float: left;
+}
+
+#links a {
+  padding: .4em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 16px;
+}
+#links a,
+a#links-trigger {
+  color: #fff;
+  -webkit-transition: .25s ease all;
+  -moz-transition: .25s ease all;
+  transition: .25s ease all;
+}
+#links a:hover,
+a#links-trigger:hover {
+  color: #fedd44;
+  text-decoration: none
+}
+#banner .logo img {
   margin-right: 1em;
 }
-footer img {
-  margin-left: -20px;
+#banner, #links, #social {
+  display: inline-block;
+  vertical-align: middle;
+}
+#links-trigger {
+  display: none;
+}
+
+
+@media screen and (max-width: 860px) {
+  header nav {
+    padding: 0
+  }
+  #banner {
+    display: block;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  }
+  #banner .logo img {
+    padding: 1em;
+  }
+  #links-trigger {
+    display: inline-block;
+    position: absolute;
+    right: 2em;
+    top: 60px;
+  }
+  #links {
+    display: block;
+    max-height: 0;
+    overflow: hidden;
+    -webkit-transition: 0.8s ease max-height;
+    -moz-transition: 0.8s ease max-height;
+    transition: 0.8s ease max-height;
+  }
+  #links.show {
+    max-height: 400px;
+  }
+  #links.show, 
+  #links > a, 
+  #social {
+    display: block;
+    text-align: center;
+  }
+  #links > a, 
+  #social {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    padding: .4em 0 .8em;
+    margin: .4em 0
+  }
+  #social {
+    margin-bottom: 0;
+  }
+}
+
+
+
 }
