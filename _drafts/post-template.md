@@ -3,7 +3,9 @@ layout: post
 title: "Test Post"
 ---
 
-## {{ page.title }}
+<h2><a href="{{ page.url }}">{{ page.title }}</a></h2>
+
+{{ page.date | date_to_long_string }}
 
 Code Island wants to use Jekyll for the website and the site on the Internet. Sounds complicated.
 
