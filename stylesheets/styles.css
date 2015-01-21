@@ -152,12 +152,45 @@ img {
   margin: 0 0 1em;
   padding: 1em 1em .1em;
 }
-.post-card > a {
-  display: block;
-}
 .post-card h2 {
   font-size: 1.25em;
   margin: 0 0 10px;
+}
+.post-card > a {
+  display: block;
+/* Members list */
+}
+.github-members ul {
+  padding: 0
+}
+.github-members .do-gooder {
+  -webkit-box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.25);
+  -moz-box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.25);
+  box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.25);
+
+  border-top: 1px solid #efefef;
+  border-left: 1px solid #efefef;
+  display: inline-block;
+  list-style: none;
+  margin: .25em .15em;
+  overflow: hidden;
+  text-align: center;
+  width: 18%;
+}
+.do-gooder a {
+  display: block;
+  padding: .5em;
+}
+.do-gooder h1 {
+  font-size: .65em;
+  margin: 0;
+}
+.do-gooder img {
+  max-width: 95%;
+}
+
+.blog-container {
+  padding: 1em 0 2em;
 }
 
 strong {
@@ -393,3 +426,9 @@ a.btn:hover {
 }
 
 
+@media print, screen and (max-width: 480px) {
+  .github-members .do-gooder {
+    margin: .25em .15em;
+    width: 28%;
+  }
+}

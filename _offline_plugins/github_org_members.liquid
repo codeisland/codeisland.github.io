@@ -1,0 +1,13 @@
+<div class="github-members">
+  <h3>{{ member_count }} Code Islander{% if member_count > 1 %}s{% endif %}*</h3>
+  <ul>
+  {% for member in members %}
+    <li class="do-gooder">
+      <a href="{{member.html_url}}">
+        <img class="avatar" src="{{member.avatar_url}}">
+        <h1 class="username">{{ member.login }}</h1>
+      </a>
+    </li>
+  {% endfor %}
+  </ul>
+</div>
