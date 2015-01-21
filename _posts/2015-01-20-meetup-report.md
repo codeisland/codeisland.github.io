@@ -15,16 +15,7 @@ Starting in February, we're switching our [meetups](http://www.meetup.com/Rhode-
 
 **Code Across America** is scheduled for February 20-22, 2015. We're looking for a venue to host another large event on one of those days. Stay tuned for updates. 
 
-### How to Add Yourself to the Members Page
-
-Don't see yourself on the Members page? Take these steps:
-
-1. Go to the [Code Island People page on Github](https://github.com/orgs/codeisland/people)
-2. Find the listing for yourself
-3. Change the next-to-right-most column from "Private" to "Public"
-4. Refresh the Members page to see your beautiful self/avatar!
-
-If, for some reason, you are not a member of the Code Island organization on Github, [email your Github username to Ryan Kelly](mailto:rkelly@code-island.org), and he'll send you an invite.
+Until next time...
 
 ![Look at those hackers hack!](/images/photos/20150120-600.png)
 
