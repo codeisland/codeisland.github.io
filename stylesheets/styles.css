@@ -8,38 +8,41 @@ body {
   font:18px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
   color:#777;
 }
-
 div.site-width{
 	width: 90%;
 	max-width: 40rem;
 	margin: 0 auto;
 }
-
 h1, h2, h3, h4, h5, h6 {
   color:#222;
-  margin:0 0 20px;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
-
 p, ul, ol, table, pre, dl {
-  margin:0 0 1em;
+  margin:0 0 2em;
 }
-
 h1, h2, h3 {
   line-height:1.1;
+  margin: 0 0 24px;
 }
-
+h4, h5, h6 {
+  line-height:1.1;
+  margin: 0 0 8px;
+}
 h1 {
   font-size:32px;
 }
-
 h2 {
   color:#393939;
 }
-
 h2, h3, h4, h5, h6 {
   color:#494949;
+}
+.page h4, h5, h6 {
+  background: rgba(122, 181, 214, 0.4);
+  padding: 4px 8px;
+  margin: 0 4px 0 0;
+  display: inline-block;
 }
 
 a {
@@ -210,10 +213,12 @@ hr {
   border:0;
   height:1px;
   width: 15%;
-  margin: 1em 0;
+  margin: 2em 0;
   background: #333;
 }
-
+.meeting hr {
+  margin: -1em 0 1em;
+}
 
 
 /* NAV BAR 
@@ -322,8 +327,23 @@ hr.white {
 .text-center {
   text-align: center;
 }
-.large {
+.lg {
   font-size: 24px;
+}
+.md {
+  font-size: 20px;
+}
+.sm {
+  font-size: 16px;
+}
+.xs {
+  font-size: 12px;
+}
+.loud {
+  color: #222;
+}
+.soft {
+  color: #444;
 }
 
 
@@ -384,16 +404,12 @@ a.btn:hover {
   background: white;
   color: #333;
 }
-.section.meeting .large {
-  color: #222;
+.section.meeting p.lg{
+  margin-bottom: 10px;
 }
-.section.meeting .large a {
-  color: #007BC0;
+.section.meeting p.sm {
+  margin-bottom: 20px;
 }
-.section.meeting .soft {
-  color: #333;
-}
-
 
 
 /* 
@@ -408,7 +424,8 @@ a.btn:hover {
 }
 .section.blog a.btn {
   color: #494949;
-  border-color: #494949
+  border-color: #494949;
+  margin-bottom: 20px;
 }
 .section.blog a.btn:hover {
   background: rgba(122, 181, 214, 0.4);
