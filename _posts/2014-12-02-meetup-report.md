@@ -4,10 +4,6 @@ title: Early December 2014 Meetup
 published: true
 ---
 
-<h2><a href="{{ page.url }}">{{ page.title }}</a></h2>
-
-{{ page.date | date_to_long_string }}
-
 Not too much report, per se, but the budget visualization sankey chart is looking great. Now we just need to make the RI data work with this tool. 
 
 And Thom Guertin confirmed that a [Google Trekker](https://www.google.com/maps/about/partners/streetview/trekker/) will be available to Code Island sometime in 2015. When we have a firm date, we'll reach out to ask Rhode Islanders what they want to see trekked.
