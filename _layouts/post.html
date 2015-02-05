@@ -13,7 +13,9 @@
       <!-- Blog -->
       <div class="section post">
         <div class="site-width">
-          <h2><a href="{{ page.url }}">{{ page.title }}</a></h2>
+          <h2><a href="{{ page.url }}">{{ page.title }}</a><br>
+            <small><em>{{ page.date | date: "%B %d %Y" }}</em></small>
+          </h2>
           {{ content }}
         </div>
       </div>
