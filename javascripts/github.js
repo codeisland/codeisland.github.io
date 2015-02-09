@@ -9,6 +9,7 @@ $.ajax( {
   dataType : "jsonp",
   success : function ( returndata ) {
     $.each( returndata.data, function ( i, item ) {
+      memberTotal = returndata.data.length;
       memberLogin = this.login;
       memberURL = this.html_url;
       memberAvatar = this.avatar_url;
@@ -18,7 +19,8 @@ $.ajax( {
                   '<h1 class="username">' + memberLogin + '</h1>' + 
                   '</a>' +
               '</li>';
-      });
-    $( '#githubMembers' ).append(html).append('</ul></div>');
+      }); 
+    $( '#members-total' ).prepend(memberTotal);
+    $( '#members-details' ).append(html).append('</ul></div>');
   } // close success handler
  });
