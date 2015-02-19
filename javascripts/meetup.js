@@ -12,7 +12,7 @@ $.ajax({
     }
 })
     .done(function( xhr, textStatus, response, data, responseJSON ) {
-      
+
       // If No Upcoming Event is Posted on Meetup...
       if (xhr.results[0] == undefined) { 
 
@@ -20,6 +20,7 @@ $.ajax({
         document.getElementById("meetupPeople").style.display = 'none'; // Don't diplay number of RSVP'ers
         document.getElementById("meetupEventURL").href = 'http://meetup.com/Rhode-Island-Code-for-America-Brigade/'; // Link to main Meetup page
         document.getElementById("meetupCTA").innerHTML = 'Join Our Meetup'; // Join us!
+      
       }
 
       // Otherwise...
@@ -31,6 +32,47 @@ $.ajax({
         // EVENT URL
         var eventURL = nextEvent.event_url;
         document.getElementById("meetupEventURL").href = eventURL; // Replace button link
+
+        // EVENT LOCATION
+        var eventLocation = nextEvent.venue.name;
+
+        // If No Address is Listed for this Event...
+        if (nextEvent.venue.address_1 == undefined) {
+
+          document.getElementById("meetupLocation").innerHTML = 'TBD'; // TBD
+
+        }
+
+        // Otherwise...
+        else {
+
+          // EVENT ADDRESS
+          var eventAddress = nextEvent.venue.address_1;
+          var gmapAddress = eventAddress.split(' ').join('+').slice(0,-1)+',';
+
+          // EVENT LATITUDE
+          var eventLatitude = nextEvent.venue.lat;
+          var gmapLat = '@'+eventLatitude+',';
+
+          // EVENT LONGITUDE
+          var eventLongitude = nextEvent.venue.lon;
+          var gmapLon = eventLongitude+',13z';
+
+          // EVENT CITY
+          var eventCity = nextEvent.venue.city;
+          var gmapCity = '+'+eventCity+',';
+          
+          // EVENT STATE
+          var eventState = nextEvent.venue.state;
+          var gmapState = '+'+eventState+'/';
+
+          // EVENT GOOGLE MAPS LINK
+          var gmapStart = 'https://www.google.com/maps/place/';
+          var gmapLink = gmapStart + gmapAddress + gmapCity + gmapState + gmapLat + gmapLon;
+          document.getElementById("meetupLocation").innerHTML = eventAddress; // Add name of location
+          document.getElementById("meetupLocation").href = gmapLink; // Link location to google maps
+
+        }
         
         // RSVP HEADCOUNT
         var headCount = nextEvent.yes_rsvp_count;
