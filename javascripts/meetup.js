@@ -13,152 +13,128 @@ $.ajax({
 })
     .done(function( xhr, textStatus, response, data, responseJSON ) {
 
-      // If No Upcoming Event is Posted on Meetup...
-      if (xhr.results[0] == undefined) { 
-
-        document.getElementById("meetupDetails").innerHTML = 'TBD (check back soon)'; // Meeting date and place TBD
-        document.getElementById("meetupPeople").style.display = 'none'; // Don't diplay number of RSVP'ers
-        document.getElementById("meetupEventURL").href = 'http://meetup.com/Rhode-Island-Code-for-America-Brigade/'; // Link to main Meetup page
-        document.getElementById("meetupCTA").innerHTML = 'Join Our Meetup'; // Join us!
       
-      }
+      if (xhr.results[0] == undefined) { // If there is no upcoming event posted on Meetup...
 
-      // Otherwise...
-      else {
+        document.getElementById("meetupDetails").innerHTML = 'TBD (check back soon)';                            // Meeting date & place
+        document.getElementById("meetupRSVP").style.display = 'none';                                            // RSVP info
+        document.getElementById("meetupCTA").innerHTML = 'Join Our Meetup';                                      // Call to Action text        
+        document.getElementById("meetupCTA").href = 'http://meetup.com/Rhode-Island-Code-for-America-Brigade/';  // Call to Action link
+      
+      } else { // Otherwise...
 
-        // NEXT EVENT
-        var nextEvent = xhr.results[0]; // First in the array returned from API
+        /*
+         *  Gather the Variables
+         */
+        
+          // Next Event
+          var nextEvent = xhr.results[0] // First event in the array returned from API
+            
+            // Permalink
+            var eventURL = nextEvent.event_url  // URL
 
-        // EVENT URL
-        var eventURL = nextEvent.event_url;
-        document.getElementById("meetupEventURL").href = eventURL; // Replace button link
+            // Location
+            if (nextEvent.venue != undefined) {
+              var eventLocation = nextEvent.venue.name                                  // Location
+              // Normal
+              var eventAddress = nextEvent.venue.address_1                              // Address
+              var eventLatitude = nextEvent.venue.lat                                   // Latitutde
+              var eventLongitude = nextEvent.venue.lon                                  // Longitude
+              var eventCity = nextEvent.venue.city                                      // City
+              var eventState = nextEvent.venue.state                                    // State
+              // Formatted for Gmaps
+              var gmapAddress = eventAddress.split(' ').join('+').slice(0,-1)+','       // Address              
+              var gmapLat = '@'+eventLatitude+','                                       // Latitude  
+              var gmapLon = eventLongitude+',13z'                                       // Longitude  
+              var gmapCity = '+'+eventCity+','                                          // City  
+              var gmapState = '+'+eventState+'/'                                        // State  
+              // Gmaps Link
+              var gmapStart = 'https://www.google.com/maps/place/'                      // Beginning of URL
+              var gmapLink = gmapStart+gmapAddress+gmapCity+gmapState+gmapLat+gmapLon;  // Complete URL
+            } else {
+              var eventAddress = 'TBD'   // Address
+              var gmapLink = eventURL    // URL
+            }
 
-        // EVENT LOCATION
-        var eventLocation = nextEvent.venue.name;
+            // RSVP
+            var headCount = nextEvent.yes_rsvp_count;                                           // Head Count (total number of 'yes' responses)
+            if (nextEvent.self.rsvp != undefined) {
+              var RSVPstatus = nextEvent.self.rsvp.response                                     // RSVP Response ("yes or no") of visitor, only if already RSVP'ed
+              if (RSVPstatus == "yes") {
+                RSVPMessage = headCount+" do-gooders will be there — including you. Yay!"       // "Yes" RSVP Message
+                CTA = "View Details"                                                            // "Yes" Call to Action
+              } else {
+                RSVPMessage = headCount+" do-gooders will be there — and you will be missed."   // "No" RSVP Message
+                CTA = "Change RSVP"                                                             // "No" Call to Action
+              }
+            } else {
+              RSVPMessage = headCount+" do-gooders will be there — what about you?"             // (No Response) RSVP Message
+              CTA = "RSVP on Meetup"                                                            // (No Response) Call to Action
+            }
 
-        // If No Address is Listed for this Event...
-        if (nextEvent.venue.address_1 == undefined) {
+            // Date & Time
 
-          document.getElementById("meetupLocation").innerHTML = 'TBD'; // TBD
+              // Now
+              var now = new Date;                                                 // Get Today's Date  
+              var todayMonth = now.getMonth()                                     // Month  
+              var todayNumber = now.getDate()                                     // Number  
+              var todayTime = formatAMPM(now)                                     // Time (formatted)
 
-        }
+              // Next Event
+              var date = new Date(nextEvent.time)                                 // Get Next Event's Date
+              var dateYear = date.getFullYear()                                   // Year
+              var dateMonth = date.getMonth()                                     // Month
+              var dateDay = date.getDay()                                         // Day
+              var dateNumber = date.getDate()                                     // Number
+              var dateTime = formatAMPM(date)                                     // Time (formatted)
 
-        // Otherwise...
-        else {
+              // Formatting
+              var m_names = new Array("January", "February", "March",             // Month
+              "April", "May", "June", "July", "August", "September", 
+              "October", "November", "December");
+              var d_names = new Array("Sunday", "Monday", "Tuesday",              // Day
+              "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"); 
+              function formatAMPM(date) {                                         // Time
+                var hours = date.getHours();  
+                var minutes = date.getMinutes();
+                var ampm = hours >= 12 ? 'pm' : 'am';
+                hours = hours % 12;
+                hours = hours ? hours : 12; // the hour '0' should be '12'
+                minutes = minutes < 10 ? '0' + minutes : minutes;
+                var strTime = hours + ':' + minutes + ' ' + ampm;
+                return strTime;
+              }
 
-          // EVENT ADDRESS
-          var eventAddress = nextEvent.venue.address_1;
-          var gmapAddress = eventAddress.split(' ').join('+').slice(0,-1)+',';
+              // Final Variables
+              if ( (todayNumber == dateNumber) && (todayMonth == dateMonth) ) { 
+                var prettyDate = 'Tonight at ' + dateTime;                        // If today
+              } else { 
+                var prettyDate = d_names[dateDay]+', '+m_names[dateMonth]+' '
+                +dateNumber+', '+dateYear+' at '+ dateTime;                       // Otherwise
+              }
 
-          // EVENT LATITUDE
-          var eventLatitude = nextEvent.venue.lat;
-          var gmapLat = '@'+eventLatitude+',';
+        /*
+         *  Do Stuff with the Variables
+         */
 
-          // EVENT LONGITUDE
-          var eventLongitude = nextEvent.venue.lon;
-          var gmapLon = eventLongitude+',13z';
+          // Date & Time 
+          document.getElementById("meetupDate").innerHTML = prettyDate;        // Date & Time
 
-          // EVENT CITY
-          var eventCity = nextEvent.venue.city;
-          var gmapCity = '+'+eventCity+',';
+          // Location 
+          document.getElementById("meetupLocation").innerHTML = eventAddress;  // Location name
+          document.getElementById("meetupLocation").href = gmapLink;           // Location link (gmaps)
+
+          // RSVP 
+          document.getElementById("meetupRSVP").innerHTML = RSVPMessage;       // RSVP Total + Visitor's Status       
           
-          // EVENT STATE
-          var eventState = nextEvent.venue.state;
-          var gmapState = '+'+eventState+'/';
-
-          // EVENT GOOGLE MAPS LINK
-          var gmapStart = 'https://www.google.com/maps/place/';
-          var gmapLink = gmapStart + gmapAddress + gmapCity + gmapState + gmapLat + gmapLon;
-          document.getElementById("meetupLocation").innerHTML = eventAddress; // Add name of location
-          document.getElementById("meetupLocation").href = gmapLink; // Link location to google maps
-
-        }
+          // Button          
+          document.getElementById("meetupCTA").innerHTML = CTA;                // Call to Action Text
+          document.getElementById("meetupCTA").href = eventURL;                // Call to Action Link
         
-        // RSVP HEADCOUNT
-        var headCount = nextEvent.yes_rsvp_count;
-        document.getElementById("meetupHeadCount").innerHTML = headCount; // Replace number of RSVP'ers
-
-        // RSVP STATUS
-
-        // If Visitor has Not Yet RSVP'ed on Meetup...
-        if (nextEvent.self.rsvp == undefined) {
-          
-          document.getElementById("meetupRSVPStatus").innerHTML = '. What about you?'; // Ammend RSVP'ers note.
-          document.getElementById("meetupCTA").innerHTML = 'RSVP on Meetup'; // Replace button link
-        
-        } 
-
-        // Otherwise...
-        else {
-          
-          // RSVP RESPONSE
-          var RSVPstatus = nextEvent.self.rsvp.response;
-
-          // If RSVP = Yes
-          if (RSVPstatus == "yes") {
-
-            var RSVPstatus = "Going";
-            document.getElementById("meetupRSVPStatus").innerHTML = ', including you. Yay!'; // Ammend RSVP'ers note.
-
-          }
-
-          // If RSVP = No
-          else {
-
-            var RSVPstatus = "Not Going";
-            document.getElementById("meetupRSVPStatus").innerHTML = ', and you\'ll be missed.'; // Ammend RSVP'ers note.
-            document.getElementById("meetupCTA").innerHTML = 'Change RSVP'; // Replace button link
-
-          }
-        }
-        
-        // EVENT DATE
-
-        // Get Today's Date     
-        var now = new Date;
-        var todayNumber = now.getDate();
-        var todayMonth = now.getMonth();
-        var todayTime = formatAMPM(now);
-
-        // Get Event's Date  
-        var date = new Date(nextEvent.time);
-        var dateTime = formatAMPM(date);
-        var dateDay = date.getDay();
-        var dateNumber = date.getDate();
-        var dateMonth = date.getMonth();
-        var dateYear = date.getFullYear();
-
-        // Make the Date Pretty
-        function formatAMPM(date) {
-          var hours = date.getHours();
-          var minutes = date.getMinutes();
-          var ampm = hours >= 12 ? 'pm' : 'am';
-          hours = hours % 12;
-          hours = hours ? hours : 12; // the hour '0' should be '12'
-          minutes = minutes < 10 ? '0' + minutes : minutes;
-          var strTime = hours + ':' + minutes + ' ' + ampm;
-          return strTime;
-        }
-        var m_names = new Array("January", "February", "March", 
-        "April", "May", "June", "July", "August", "September", 
-        "October", "November", "December");
-        var d_names = new Array("Sunday", "Monday", "Tuesday", 
-        "Wednesday", "Thursday", "Friday", "Saturday", "Sunday");
-        
-        // If event is today...
-        if ( (todayNumber == dateNumber) && (todayMonth == dateMonth) ) {        
-          var prettyDate = 'Tonight at ' + dateTime;    
-        } 
-        // Otherwise...
-        else {
-          var prettyDate = d_names[dateDay] + ', ' + m_names[dateMonth] + ' ' + dateNumber +  ', ' + dateYear + ' at ' + dateTime;
-        
-        }
-        
-        document.getElementById("meetupDate").innerHTML = prettyDate; // Replace the Date
       }
 
     })
+
     .fail( function(xhr, textStatus, errorThrown) {
       alert(xhr.responseText);
       alert(textStatus);
