@@ -6,7 +6,7 @@ title: RI Budget Sankey Project Profile
 
 ## RI Budget Sankey Project Profile
 
-**STATUS: Launched as beta**
+**STATUS: [Launched as beta](/RI_Budget_Sankey)**
 
 ### Summary
 
