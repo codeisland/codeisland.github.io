@@ -1,7 +1,7 @@
 ---
 "body-class": projects
 layout: page
-title: Candidates Questionnaire Project Profile
+title: RI Budget Sankey Project Profile
 ---
 
 ## RI Budget Sankey Project Profile
