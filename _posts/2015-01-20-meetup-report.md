@@ -3,11 +3,7 @@ layout: post
 title: January 2015 Update
 ---
 
-<h2><a href="{{ page.url }}">{{ page.title }}</a></h2>
-
-{{ page.date | date_to_long_string }}
-
-2015 is off to a great start for Code Island, with two great meetups in January and lots of new faces. If you click over to [our Members page](/members/), you can see who's been contributing to our work. 
+2015 is off to a great start for Code Island, with two great meetups in January and lots of new faces. If you click over to [our Join page](/join/), you can see who's been contributing to our work. 
 
 ### Announcements
 

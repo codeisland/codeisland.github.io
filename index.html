@@ -14,7 +14,7 @@ published: true
               <small><em>{{ post.date | date: "%B %d %Y" }}</em></small>
             </h2>
             <p>{{ post.content | strip_html | truncatewords:50}}</p>
-            <a href="{{ post.url }}" class="btn">Read more</a>
+            <a href="{{ post.url }}" class="btn cyan">Read more</a>
         </article>
       {% endfor %}
     </div>
