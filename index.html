@@ -5,13 +5,18 @@ published: true
 ---
 
   <div class="blog-container site-width">
-    <h2>Latest blog posts</h2>
-    <ul>
+    <h1>Latest blog posts</h1>
+    <div class="post-toc">
       {% for post in site.posts %}
-      <li>
-        <a href="{{ post.url }}">{{ post.title }}</a>
-      </li>
+        <article class="post-card">
+            <h2>
+              <a href="{{ post.url }}">{{ post.title }}</a><br>
+              <small><em>{{ post.date | date: "%B %d %Y" }}</em></small>
+            </h2>
+            <p>{{ post.content | strip_html | truncatewords:50}}</p>
+            <a href="{{ post.url }}" class="btn">Read more</a>
+        </article>
       {% endfor %}
-    </ul>
+    </div>
   </div>
 

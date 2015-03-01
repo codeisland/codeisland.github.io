@@ -3,10 +3,6 @@ layout: post
 title: Candidates Questionnaire Project Complete
 ---
 
-<h2><a href="{{ page.url }}">{{ page.title }}</a></h2>
-
-{{ page.date | date_to_long_string }}
-
 <p><strong>Project: Candidates Questionnaire 
 <br />STATUS: Complete!</strong></p>
 
