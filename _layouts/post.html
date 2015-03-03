@@ -1,20 +1,35 @@
 <!DOCTYPE html>
 <html>
 
+  <!-- HEAD -->
   {% include head.html %}
 
   <body id="page" class="{{ page.body-class }} post no-js">
 
+    <!-- HEADER -->
     {% include header.html %}
 
     <main>
-      <div class="site-width">
-        {{ content }}
+      <!-- Blog -->
+      <div class="section post">
+        <div class="site-width">
+          <h2><a href="{{ page.url }}">{{ page.title }}</a><br>
+            <small><em>{{ page.date | date: "%B %d %Y" }}</em></small>
+          </h2>
+          {{ content }}
+          <a class="btn cyan" href="/blog">Back to blog home</a>
+        </div>
       </div>
     </main>
 
-    {% include footer.html %}
+    <!-- FOOTER -->
+    <div class="section footer">
+      {% include footer.html %}
+    </div>
 
+  <!-- FOOT -->
+  {% include foot.html %}
+  
   </body>
   
 </html>

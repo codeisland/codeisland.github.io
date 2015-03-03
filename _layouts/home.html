@@ -1,45 +1,59 @@
 <!DOCTYPE html>
 <html>
 
-  {% include head.html %}
+	<!-- HEAD -->
+	{% include head.html %}
 
+	<body id="page" class="{{ page.body-class }} no-js">
 
-  <body id="page" class="{{ page.body-class }} no-js">
+		<!-- HEADER -->
+		{% include header.html %}
 
-    {% include header.html %}
+		<!-- Mission -->
+		<div class="section hero">
+			<div class="site-width">
+				<div >
+					<h1>Mission</h1>
+					<p class="large">
+						We are the official <a href="http://codeforamerica.org/">Code for America</a> brigade in Rhode Island, an all-volunteer organization of people looking to improve our community through technology.
+					</p>
+					<a class="btn white outline" href="/about/">Learn More</a>
+				</div> 
+			</div>
+		</div>
 
-	  <div class="hero">
-	    <div class="site-width">
-	      <h1>Welcome to Code Island</h1>
-	      <p>
-	        Code Island is the official <a href="http://codeforamerica.org/">Code for America</a> brigade in Rhode Island. We are an all-volunteer organization of people looking to improve our community through technology.
-	      </p>
-	      <p>
-	        We hold a <a href="http://www.meetup.com/Rhode-Island-Code-for-America-Brigade/">meetup</a> the first and third Monday of every month at 6:30pm at <a href="https://www.google.com/maps/place/10+Davol+Square,+Providence,+RI+02903/@41.824152,-71.4398007,13z/data=!4m2!3m1!1s0x89e4456a8646dbf1:0x2259e0f433c149cf?hl=en">Brown University&rsquo;s TRI-Lab at 10 Davol Square</a>. Our meetups are free and open to anyone who wants to contribute to our work.
-	      </p>
-	      <p>Stay in Touch</p>
-	      <ul>
-	      <li>Check out our projects over on our <a href="https://github.com/codeisland/">Github repository</a></li>
-	      <li>Follow us <a href="http://www.twitter.com/code_island">on Twitter</a></li> 
-	      <li>Like us <a href="https://www.facebook.com/codeislandbrigade">on Facebook</a></li>
-	      <li>Join our <a href="https://plus.google.com/u/0/communities/112228497378493874687">Google+ community</a></li>
-	      <li>Send us <a href="mailto:info@code-island.org">an old-fashioned email</a></li>
-	      </ul>
-	    </div>
-	  </div>
+		<!-- Meeting -->
+		<div class="section meeting">
+			{% include nextmeeting.html %}
+		</div>
 
-    <main>
+		<!-- CONTENT -->
+		<main>
+			
+			<!-- Blog -->
+			<div class="section blog">
+				{{ content }}
+			</div>
 
-      {{ content }}
+		</main>
 
-    	<div class="twitter-timeline site-width">
-				{% include twitter.html %}    
-    	</div>
-  
-    </main>
+		<!-- Twitter -->
+		<div class="section twitter">
+			<div class="twitter-timeline">
+				{% include twitter.html %}
+			</div>
+		</div>
 
-    {% include footer.html %}
-      
-  </body>
+		<!-- FOOTER -->
+		<div class="section footer">
+			{% include footer.html %}
+		</div>		
+
+	<!-- FOOT -->
+	{% include foot.html %}
+	<!-- Display Next Meeting via Meetup API -->
+	<script src="/javascripts/meetup.js" type="text/javascript"></script>
+
+	</body>
 
 </html>
