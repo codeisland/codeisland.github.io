@@ -239,6 +239,30 @@ hr {
   margin: -1em 0 1em;
 }
 
+/* / / / / / Projects Section / / / / / */
+.project-summary {
+  margin-bottom: 3em;
+}
+.project-summary h5 {
+  background: none;
+  display: block;
+}
+.project-summary h5 strong {
+  background: #333;
+  color: #efefef;
+  display: inline-block;
+  margin-left: -8px;
+  padding: .25em .5em;
+}
+.project-links {
+  list-style: none;
+  margin-top: -1.5em;
+  padding-left: 0;
+}
+.project-links li {
+  vertical-align: middle;
+}
+
 
 /* NAV BAR 
 ****************************/
