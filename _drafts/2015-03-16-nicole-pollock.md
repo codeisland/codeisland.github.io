@@ -37,8 +37,13 @@ PVD Open Portal
 
 RI Budget Visualization
 
-Seacant? vs Socrata (Seacant winning)
+[CKAN](http://ckan.org) vs Socrata (CKAN winning)
 
+Nicole Pollock
+
+Still lots of paper. Still lots of "who would want this data...for what?" Still lots of unregimented/undocumented processes. Most databases can't communicate with each other.
+
+Lots of contracts, but no central repository of contracts. Hard to capture the moment when many contracts come up at once. That's the opportunity to shift to a more unified platform.
 
 
 
