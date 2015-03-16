@@ -25,6 +25,20 @@ published: false
 : Ellen
 : Danny
 
+### Government as a Platform
+
+"GaaP is too "squishy" for avg gov emp. Everything is custom in their world. Narrative to show customization."
+
+"Usually not actually custom processes; most systems can do what you need."
+
+"Weather data as a platform: consistent over many decades."
+
+PVD Open Portal
+
+RI Budget Visualization
+
+Seacant? vs Socrata (Seacant winning)
+
 
 
 
