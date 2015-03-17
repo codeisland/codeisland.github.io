@@ -45,6 +45,9 @@ Still lots of paper. Still lots of "who would want this data...for what?" Still 
 
 Lots of contracts, but no central repository of contracts. Hard to capture the moment when many contracts come up at once. That's the opportunity to shift to a more unified platform.
 
+Only working on her own right now, so hard to have immediate impact. Meeting with department heads, learning about process, tools and issues. Working to determine meaningful metric and data to track them. 
+
+Also focusing on lean process, which means studying and documenting process. In the end, this will make for better data sets.
 
 
 
