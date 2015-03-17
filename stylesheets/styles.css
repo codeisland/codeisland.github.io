@@ -298,8 +298,13 @@ a#links-trigger:hover {
   color: #fedd44;
   text-decoration: none
 }
+a.logo {
+  display: inline-block;
+}
 #banner .logo img {
   margin-right: 1em;
+  position: relative;
+  top: 4px;
 }
 #banner, #links, #social {
   display: inline-block;
@@ -325,7 +330,7 @@ a#links-trigger:hover {
     display: inline-block;
     position: absolute;
     right: 2em;
-    top: 60px;
+    top: 50px;
   }
   #links {
     display: block;
