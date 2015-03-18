@@ -132,7 +132,8 @@ img {
 }
 
 .hero {
-  background: #2f3d4a url(../images/hero-texture-sunset.jpg) no-repeat top center;
+  background: #811d32 url(../images/home-page-hero-red-blur.jpg) no-repeat center center;
+  background-size: 100% auto;
 }
 .hero a {
   color: #fedd44;
