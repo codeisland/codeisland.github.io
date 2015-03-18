@@ -18,6 +18,8 @@ March brought our meetups to a new level with excellent guest speakers both nigh
 
 With a top-five seasonal snowfall coming almost all in a six week stretch this past winter, shoveling out the elderly or infirm became a critical service.  According to our speakers, some people were snowed in for over a week. Kate and Marisa deployed a force of volunteer shovelers, and they got the job done. 
 
+![Kate Pisano (l) and Marisa Petreccia from ServeRI](/images/photos/20150316a-1024.jpg)
+
 While they could always use more volunteers, they felt like they could have been more effective if they had better tools to manage what has rapidly become a very large program. Mostly using spreadsheets, hand-entered texts and 3rd-party read-only databases, they: 
 
 * field, vet and log the volunteers (a crucial safety issue)
@@ -28,13 +30,15 @@ While they could always use more volunteers, they felt like they could have been
 
 Simple. Not.
 
-In the discussion, we explored a range of approaches and learned about the safety and privacy concerns that make this service uncomfortable with a public platforms like the admirable (Snowcrew)[http://snowcrew.org]. 
+In the discussion, we explored a range of approaches and learned about the safety and privacy concerns that make this service uncomfortable with a public platforms like the admirable [Snowcrew](http://snowcrew.org). 
 
 After we broke up into work groups, their table was the last one going. As they left, Marisa and Kate expressed a new sense of hope. Somebody understood *their* need and would volunteer to help out.
 
 ### Innovator in Chief
 
 This is a very big deal. Mayor Jorge Elorza's created a Chief Innovation Officer for the city of Providence and appointed Nicole Pollock to that position. Her brief is to work across departments advocating for and assisting in a transition toward more integrated information systems and smoother work flows. 
+
+![Nicole Pollock](/images/photos/20150316b-1024.jpg)
 
 Not yet 60 days on the job, Nicole spent three hours with Code Island, speaking about the challenges and opportunities in her work. Co-captain Ryan Kelly framed the discussion by playing [this video from Gov.uk](https://www.youtube.com/watch?v=ZzPU6Pdw05s) on Government as a Platform. 
 
