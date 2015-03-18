@@ -10,9 +10,9 @@ published: false
 
 ## March Meetups with Guest Speakers
 
-February was tough on your local civic hackers. Our early month meetup was snowed out, and the late month edition featured a temperature of 47F *inside* the TRI-Lab. So enough about February. 
+February was tough on your local civic hackers. Our early month meetup was snow-bliterated, and the late month edition featured a temperature of 49F *inside* the TRI-Lab. So enough about February. 
 
-March brought our meetups to a new level with excellent guest speakers both nights. On Monday the 2nd, Marisa Petriccia and Kate Pisano from [ServeRI](http://www.serverhodeisland.org/) told us about their systems for managing their volunteer snow-shoveling program, which saw an explosion of need this winter. And on the 16th, we talked with Nicole Pollock, who was recently sworn-in as the first Chief Innovation Officer in the city of Providence.
+March brought our meetups to a new level with excellent guest speakers both nights. On Monday the 2nd, Marisa Petreccia and Kate Pisano from [ServeRI](http://www.serverhodeisland.org/) told us about their systems for managing their volunteer snow-shoveling program, which saw an explosion of need this winter. And on the 16th, we talked with Nicole Pollock, who was recently sworn-in as the first Chief Innovation Officer in the city of Providence.
 
 ### Snowed In
 
@@ -42,8 +42,8 @@ This is a very big deal. Mayor Jorge Elorza's created a Chief Innovation Officer
 
 Not yet 60 days on the job, Nicole spent three hours with Code Island, speaking about the challenges and opportunities in her work. Co-captain Ryan Kelly framed the discussion by playing [this video from Gov.uk](https://www.youtube.com/watch?v=ZzPU6Pdw05s) on Government as a Platform. 
 
-Nicole spoke to a range of issues, and she had good ideas for moving forward. But that's the easy part, as she explained. This is a newly-created role with no staff and no authority within any of the client agencies she serves. So her first job is to learn about the agencies' specific pain-points and bottlenecks. 
+Nicole spoke to a range of issues, and she had good ideas for moving forward. But that's the easy part, as she explained. This is a newly-created role with no staff and no authority within any of the client agencies she serves. So her first job is to learn about the agencies' specific pain points and bottlenecks. 
 
 One encouraging point she made was that her office is focused on workflows and documentation as well as information systems and data collection. Smoothing out workflows will make it easier to identify and collect the key data needed for metrics and other output.
 
-As those most likely to create that "other output," Code Islanders stand ready to help in any way they can.
+As the people who can't wait to create some of that "other output," Code Islanders stand ready to help in any way they can.
