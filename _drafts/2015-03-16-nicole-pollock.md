@@ -18,7 +18,13 @@ March brought our meetups to a new level with excellent guest speakers both nigh
 
 With a top-five seasonal snowfall coming almost all in a six week stretch this past winter, shoveling out the elderly or infirm became a critical service.  According to our speakers, some people were snowed in for over a week. Kate and Marisa deployed a force of volunteer shovelers, and they got the job done. 
 
-While they always could use more volunteers, they felt like they could have been more effective if they had better tools to manage what has rapidly become a very large program. Mostly using spreadsheets and hand-entered texts, they vet the volunteers (a crucial safety issue), field the service requests, assign the volunteers requests, communicate the assignment to the volunteers and follow up on performance. 
+While they could always use more volunteers, they felt like they could have been more effective if they had better tools to manage what has rapidly become a very large program. Mostly using spreadsheets, hand-entered texts and 3rd-party read-only databases, they: 
+
+# vet the volunteers (a crucial safety issue)
+# field the service requests
+# assign the volunteers requests
+# communicate the assignment to the volunteers 
+# follow up on performance. 
 
 In the discussion, we explored a range of approaches and learned about the safety and privacy concerns that make this service uncomfortable with a public platforms like the admirable (Snowcrew)[http://snowcrew.org]. 
 
