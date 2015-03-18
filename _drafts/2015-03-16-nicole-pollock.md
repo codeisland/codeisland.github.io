@@ -20,11 +20,13 @@ With a top-five seasonal snowfall coming almost all in a six week stretch this p
 
 While they could always use more volunteers, they felt like they could have been more effective if they had better tools to manage what has rapidly become a very large program. Mostly using spreadsheets, hand-entered texts and 3rd-party read-only databases, they: 
 
-# vet the volunteers (a crucial safety issue)
-# field the service requests
-# assign the volunteers requests
-# communicate the assignment to the volunteers 
-# follow up on performance. 
+* field, vet and log the volunteers (a crucial safety issue)
+* field, vet and log the service requests
+* assign the volunteers to service requests
+* communicate the assignments to the volunteers 
+* follow up on performance
+
+Simple. Not.
 
 In the discussion, we explored a range of approaches and learned about the safety and privacy concerns that make this service uncomfortable with a public platforms like the admirable (Snowcrew)[http://snowcrew.org]. 
 
@@ -34,52 +36,10 @@ After we broke up into work groups, their table was the last one going. As they 
 
 This is a very big deal. Mayor Jorge Elorza's created a Chief Innovation Officer for the city of Providence and appointed Nicole Pollock to that position. Her brief is to work across departments advocating for and assisting in a transition toward more integrated information systems and smoother work flows. 
 
-Not yet 60 days on the job, Nicole spent three hours with Code Island, speaking about the challenges and opportunities in her work. Co-captain Ryan Kelly framed the discussion by playing [this video from Gov.uk]() on Government as a Platform. 
+Not yet 60 days on the job, Nicole spent three hours with Code Island, speaking about the challenges and opportunities in her work. Co-captain Ryan Kelly framed the discussion by playing [this video from Gov.uk](https://www.youtube.com/watch?v=ZzPU6Pdw05s) on Government as a Platform. 
 
+Nicole spoke to a range of issues, and she had good ideas for moving forward. But that's the easy part, as she explained. This is a newly-created role with no staff and no authority within any of the client agencies she serves. So her first job is to learn about the agencies' specific pain-points and bottlenecks. 
 
+One encouraging point she made was that her office is focused on workflows and documentation as well as information systems and data collection. Smoothing out workflows will make it easier to identify and collect the key data needed for metrics and other output.
 
-
-
-
-: Ryan - ProvPlan
-: Shawn
-: Akisha
-: Christian
-: Jason Becker
-: Nicole Pollock (guest speaker)
-: Speck
-: Dan
-: Alex
-: James
-: Nelson
-: Marty
-: Ellen
-: Danny
-
-### Government as a Platform
-
-"GaaP is too "squishy" for avg gov emp. Everything is custom in their world. Narrative to show customization."
-
-"Usually not actually custom processes; most systems can do what you need."
-
-"Weather data as a platform: consistent over many decades."
-
-PVD Open Portal
-
-RI Budget Visualization
-
-[CKAN](http://ckan.org) vs Socrata (CKAN winning)
-
-Nicole Pollock
-
-Still lots of paper. Still lots of "who would want this data...for what?" Still lots of unregimented/undocumented processes. Most databases can't communicate with each other.
-
-Lots of contracts, but no central repository of contracts. Hard to capture the moment when many contracts come up at once. That's the opportunity to shift to a more unified platform.
-
-Only working on her own right now, so hard to have immediate impact. Meeting with department heads, learning about process, tools and issues. Working to determine meaningful metric and data to track them. 
-
-Also focusing on lean process, which means studying and documenting process. In the end, this will make for better data sets.
-
-
-
-Enter text in [Markdown](http://daringfireball.net/projects/markdown/). Use the toolbar above, or click the **?** button for formatting help.
+As those most likely to create that "other output," Code Islanders stand ready to help in any way they can.
