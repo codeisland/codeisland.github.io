@@ -1,9 +1,4 @@
 ---
-published: true
----
-
-
----
 layout: post
 title: March 2015 Meetup Review
 published: true
