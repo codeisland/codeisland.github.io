@@ -2,9 +2,13 @@
 "body-class": videos
 layout: page
 title: Code Island Videos
+published: true
 ---
+
 ## Videos
 
-<iframe width="420" height="315" src="http://www.youtube.com/embed/R6pvubzFyzs" frameborder="0" allowfullscreen></iframe>
+### National Day of Civic Hacking Live Stream
 
-[View on YouTube](http://youtu.be/R6pvubzFyzs)
+<iframe width="420" height="315" src="http://www.youtube.com/embed/dwCFOywyX78" frameborder="0" allowfullscreen></iframe>
+
+[View on YouTube](http://youtu.be/dwCFOywyX78)
