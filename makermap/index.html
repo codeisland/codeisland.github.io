@@ -16,7 +16,39 @@
 	<script>
 		L.mapbox.accessToken = 'pk.eyJ1IjoicmltYWtlcm1hcCIsImEiOiJkYTc3OWJiMDE5MjljZjk0ZDFiOTk2YmViOTQzMjYyZSJ9.aSNuiI45yGrpoG8QvB0x2A';
 		var map = L.mapbox.map('map', 'mapbox.streets')
-		.setView([40, -74.50], 9);
+			.setView([40, -74.50], 9);
+
+		// var featureLayer = L.mapbox.featureLayer()
+		// 	.addTo(map);
+
+		// featureLayer.loadURL('sample_points.geojson');
+
+		var featureLayer = L.mapbox.featureLayer({
+		    // this feature is in the GeoJSON format: see geojson.org
+		    // for the full specification
+		    type: 'Feature',
+		    geometry: {
+		        type: 'Point',
+		        // coordinates here are in longitude, latitude order because
+		        // x, y is the standard for GeoJSON and many formats
+		        coordinates: [
+		          -77.03221142292,
+		          38.913371603574 
+		        ]
+		    },
+		    properties: {
+		        title: 'Peregrine Espresso',
+		        description: '1718 14th St NW, Washington, DC',
+		        // one can customize markers by adding simplestyle properties
+		        // https://www.mapbox.com/guides/an-open-platform/#simplestyle
+		        'marker-size': 'large',
+		        'marker-color': '#BE9A6B',
+		        'marker-symbol': 'cafe'
+		    }
+		}).addTo(map);
+
+		// var featureLayer = L.mapbox.featureLayer().addTo(map);
+
 	</script>
 </body>
 </html>
