@@ -1,1 +1,107 @@
-
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  #map-canvas { width:500px; height:400px; }
+  .layer-wizard-search-label { font-family: sans-serif };
+</style>
+<script type="text/javascript"
+  src="http://maps.google.com/maps/api/js?sensor=false">
+</script>
+<script type="text/javascript">
+  var map;
+  var layer_0;
+  function initialize() {
+    map = new google.maps.Map(document.getElementById('map-canvas'), {
+      center: new google.maps.LatLng(41.890691142383915, -71.39428201480963),
+      zoom: 14
+    });
+    var style = [
+      {
+        featureType: 'all',
+        elementType: 'all',
+        stylers: [
+          { saturation: -31 }
+        ]
+      },
+      {
+        featureType: 'administrative.country',
+        elementType: 'all',
+        stylers: [
+          { visibility: 'off' }
+        ]
+      },
+      {
+        featureType: 'administrative.province',
+        elementType: 'all',
+        stylers: [
+          { visibility: 'off' }
+        ]
+      },
+      {
+        featureType: 'administrative.locality',
+        elementType: 'all',
+        stylers: [
+          { visibility: 'off' }
+        ]
+      },
+      {
+        featureType: 'administrative.neighborhood',
+        elementType: 'all',
+        stylers: [
+          { visibility: 'off' }
+        ]
+      },
+      {
+        featureType: 'administrative.land_parcel',
+        elementType: 'all',
+        stylers: [
+          { visibility: 'off' }
+        ]
+      },
+      {
+        featureType: 'poi',
+        elementType: 'all',
+        stylers: [
+          { visibility: 'off' }
+        ]
+      }
+    ];
+    var styledMapType = new google.maps.StyledMapType(style, {
+      map: map,
+      name: 'Styled Map'
+    });
+    map.mapTypes.set('map-style', styledMapType);
+    map.setMapTypeId('map-style');
+    layer_0 = new google.maps.FusionTablesLayer({
+      query: {
+        select: "col0>>0",
+        from: "1PWbVVQx4Fk4cufX3WxfdRur6imG62wVtkkYNDj1l"
+      },
+      map: map,
+      styleId: 2,
+      templateId: 2
+    });
+  }
+  function changeMap_0() {
+    var whereClause;
+    var searchString = document.getElementById('search-string_0').value.replace(/'/g, "\\'");
+    if (searchString != '--Select--') {
+      whereClause = "'StreetName' CONTAINS IGNORING CASE '" + searchString + "'";
+    }
+    layer_0.setOptions({
+      query: {
+        select: "col0>>0",
+        from: "1PWbVVQx4Fk4cufX3WxfdRur6imG62wVtkkYNDj1l",
+        where: whereClause
+      }
+    });
+  }
+  google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+</head>
+<body>
+  <div id="map-canvas"></div>
+  <div style="margin-top: 10px;">
+    <label class="layer-wizard-search-label">
+      Search by Street Name
