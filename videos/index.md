@@ -4,14 +4,16 @@ layout: page
 title: Code Island Videos
 published: true
 ---
-<div class="ytcontainer">
-## Videos
 
-### National Day of Civic Hacking Live Stream
+<div class="ytcontainer">
+
+<h2>Videos</h2>
+
+<h3>National Day of Civic Hacking Live Stream</h3>
 
 <iframe src="http://www.youtube.com/embed/dwCFOywyX78" frameborder="0" allowfullscreen></iframe>
 
-[View on YouTube](http://youtu.be/dwCFOywyX78)
+<a href="http://youtu.be/dwCFOywyX78">View on YouTube</a>
 </div>
 <script src="../javascripts/jquery.fitvids.js"></script>
 <script>
