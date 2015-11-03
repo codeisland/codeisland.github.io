@@ -9,6 +9,11 @@ published: true
 
 ### National Day of Civic Hacking Live Stream
 
-<iframe width="420" height="315" src="http://www.youtube.com/embed/dwCFOywyX78" frameborder="0" allowfullscreen></iframe>
+<iframe width="420" height="315" class="ytvideo" src="http://www.youtube.com/embed/dwCFOywyX78" frameborder="0" allowfullscreen></iframe>
 
 [View on YouTube](http://youtu.be/dwCFOywyX78)
+
+<script src="../javascripts/jquery.fitvids.js"></script>
+<script>
+	$(".ytvideo").fitVids();
+</script>
