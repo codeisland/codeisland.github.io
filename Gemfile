@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
-gem "jekyll", ">= 2.4"
-gem "curb", ">= 0.8.6"
+gem "jekyll", "~> 2.4"
+gem "curb", "~> 0.8"
 
 #gem "github-pages", ">= 29"
 
